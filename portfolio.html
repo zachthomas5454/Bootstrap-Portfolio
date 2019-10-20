@@ -1,62 +1,142 @@
- <!--The following file developed is defined as HTML for the Computer to understand-->
- <!DOCTYPE html>
- <!--The following represents the root of HTML file-->
- <!--The HTML file language is English - United States-->
+<!--The following file developed is defined as HTML for the Computer to understand-->
+<!DOCTYPE html>
+<!--The following represents the root of HTML file-->
+<!--The HTML file language is English - United States-->
 <html lang="en-us">
 
- <!--The head charset is defined-->
- <!--The link to CSS file is defined-->
-  <head>       
+<!--The head charset is defined-->
+<!--The link to CSS file is defined-->
+
+<head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-  </head>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-    <!--The body represents the main contents of the document--> 
-  <body>
-        <div id="toplayout">
-          <nav>
-            <header id="headlayout">
-             <h2 id="name">
-                    Zachariah Thomas
-             </h2>
-            </header>
-             <div class="headlist">
-               <ul>
-                    <li id="abouthead"><a class="link" href="index.html">About</a></li>
-                    <li id="portfoliohead"><a class="link" href="portfolio.html">Portfolio</a></li>
-                    <li id="contacthead"><a class="link" href="contact.html">Contact</a></li>
-               </ul>
-             </div>  
-          </nav> <br>
-          <div id="bodylayout">
-             <div id="portfolio">
-              <h2 id=h21>Portfolio</h2> <hr>
-               <figure class="pic1">
-                 <img class="profilepic1" src="assets/images/Soccer.jfif" height="180px" width="240px" alt="Profile Picture"/>
-                 <div class="text1"><strong>Mad For Soccer</strong></div>
-               </figure>
-               <figure class="pic1">
-                 <img class="profilepic1" src="assets/images/Photography.jpg" height="180px" width="240px" alt="Profile Picture"/>
-                 <div class="text1"><strong>Photography</strong></div>
-               </figure>
-               <figure class="pic1">
-                 <img class="profilepic1" src="assets/images/Workout.jpg" height="180px" width="240px" alt="Profile Picture"/>
-                 <div class="text1"><strong>Workout is Life</strong></div>
-               </figure>
-               <figure class="pic1">
-                <img class="profilepic1" src="assets/images/Web.jfif" height="180px" width="240px" alt="Profile Picture"/>
-                <div class="text1"><strong>Test Inner Potential</strong></div>
-               </figure>
-               <figure class="pic1">
-                <img class="profilepic1" src="assets/images/Engineer.png" height="180px" width="240px" alt="Profile Picture"/>
-                <div class="text1"><strong>Love my Work</strong></div>
-              </figure>
-            </div> 
-          </div>
+<!--The body represents the main contents of the document-->
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #4aaaa5">
+        <div class="container">
+            <a class="navbar-brand" href="#">Zachariah Thomas</a>
         </div>
-        <div id="footlayout">
-          <footer>Copyright©</footer>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+<br> <br> <br> <br>
+    <div id="AboutData">
+        <div class="container mt-3 mb-5">
+            <div class="row" id="row1">
+                <div class="col">
+                    <div id="Aboutme">
+                        <div class="card bg-white pt-3 pl-3" style= "color:#4aaaa5; font-size: 30px;" ;>Portfolio<hr>
+                                <div class="profilepic">
+                                    <img class="img-fluid my-5 mx-5" id="profilepic" src="images/Soccer.JFIF" height="150px" width="250px" alt="Profile Picture"  />
+                                    <div class="caption" style="color: white; background-color: #4aaaa5; text-align: center;   ">
+                                        <p>Soccer</p>
+                                    </div>
+                                </div> 
+                                <div class="profilepic">
+                                    <img class="img-fluid my-5 mx-5" id="profilepic" src="images/Photography.JPG" height="150px" width="250px" alt="Profile Picture"  />
+                                    <div class="caption" style="color: white; background-color: #4aaaa5; text-align: center;   ">
+                                        <p>Photography</p>
+                                    </div>
+                                  </div>
+                                <div class="profilepic">
+                                    <img class="img-fluid my-5 mx-5" id="profilepic" src="images/Workout.JPG" height="150px" width="250px" alt="Profile Picture"  />
+                                    <div class="caption" style="color: white; background-color: #4aaaa5; text-align: center;   ">
+                                        <p>Workout</p>
+                                    </div>
+                                  </div>
+                                <div class="profilepic">
+                                   <img class="img-fluid my-5 mx-5" id="profilepic" src="images/Web.JFIF" height="150px" width="250px" alt="Profile Picture"  />
+                                   <div class="caption" style="color: white; background-color: #4aaaa5; text-align: center;   ">
+                                      <p>Web Development</p>
+                                  </div>
+                                  </div>
+                                <div class="profilepic">
+                                    <img class="img-fluid my-5 mx-5" id="profilepic" src="images/Engineer.PNG" height="150px" width="250px" alt="Profile Picture"  />
+                                    <div class="caption" style="color: white; background-color: #4aaaa5; text-align: center;   ">
+                                        <p>Engineering</p>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-  </body>
+    </div>
+
+    <div id="Footer" class="container-fluid text-white text-center py-4  " style="background-color: #777777; border-top: 15px solid #4aaaa5" >
+        <div class="row" id="footrow">
+            <div class="col " id="footcol">
+                <p>Copyright©</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #row1 {
+            margin: 60px 0px 0px 0px;
+            width: 85%;
+        }
+
+        .navbar-brand {
+            font-size: 40px;
+        }
+
+        .profilepic{
+            position:relative;
+        }
+
+        #footer{
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          
+        }
+
+        .caption{
+          position: absolute;
+          top: 55%;
+          left: 48px;
+          width: 250px;
+        }
+
+
+        @media (min-width: 980px) {
+            .container {
+                margin: 0px;
+            }
+        }
+
+
+        @media (min-width: 768px) {
+            .container {
+                margin: 0px;
+            }
+        }
+
+
+        @media (min-width: 640px) {
+            .container {
+                margin: 0px;
+            }
+        }
+    </style>
+
+</body>
+
 </html>
